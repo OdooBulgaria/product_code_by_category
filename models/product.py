@@ -7,6 +7,10 @@ from openerp import models, fields, api, _, SUPERUSER_ID
 import re
 from openerp.exceptions import Warning as UserError
 
+import sys  
+reload(sys)  
+sys.setdefaultencoding('utf-8')
+
 
 class ProductCategory(models.Model):
 
